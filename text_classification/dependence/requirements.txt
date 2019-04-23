@@ -1,0 +1,7 @@
+# -*- coding: utf-8 -*-
+tensorflow==1.13.1
+
+# markdown编辑器
+# markdown==3.0.1
+# 代码高亮
+# pygments==2.2.0
