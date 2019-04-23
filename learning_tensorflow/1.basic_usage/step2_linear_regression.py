@@ -21,7 +21,7 @@ for i in range(num_points):
 
 # 生成一些样本
 x_data = [v[0] for v in vectors_set]
-y_data = [v[0] for v in vectors_set]
+y_data = [v[1] for v in vectors_set]
 
 plt.scatter(x_data, y_data, c='r')
 plt.show()
