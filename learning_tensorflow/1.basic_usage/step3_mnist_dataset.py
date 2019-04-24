@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-step3. mnist数据集
+step3. mnist数据集: TensorFlow的helloworld
 """
 import numpy as np
 import tensorflow as tf
