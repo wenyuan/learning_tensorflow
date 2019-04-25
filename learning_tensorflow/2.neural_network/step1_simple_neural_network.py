@@ -36,15 +36,20 @@ x = tf.placeholder('float', [None, n_input])
 y = tf.placeholder('float', [None, n_classes])
 
 # 拓扑参数
-# 指定一个初始化项: 这里指定方差项
+# 指定一个初始化项: 指定方差项
 stddev = 0.1
-# w1和w2进行高斯初始化
+# 权重初始化: w1和w2进行高斯初始化
 weights = {
     'w1': tf.Variable(tf.random_normal([n_input, n_hidden_1], stddev=stddev)),
     'w2': tf.Variable(tf.random_normal([n_hidden_1, n_hidden_2], stddev=stddev)),
-    'out': tf.Variable(tf.random_normal([n_hidden_2, n_classes], stddev=stddev)),
+    'out': tf.Variable(tf.random_normal([n_hidden_2, n_classes], stddev=stddev))
 }
-
+biases = {
+    'b1': tf.Variable(tf.random_normal([n_hidden_1])),
+    'b2': tf.Variable(tf.random_normal([n_hidden_2])),
+    'out': tf.Variable(tf.random_normal([n_classes]))
+}
+print('NETWORK READY')
 
 
 
