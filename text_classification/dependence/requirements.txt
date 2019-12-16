@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-tensorflow==1.5
+tensorflow==1.15.0
 
 # markdown编辑器
 # markdown==3.0.1
